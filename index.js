@@ -9,7 +9,7 @@ app.use(express.json())
 app.post("/receber",(req,res)=>{
     var b = req.body;
     
-    console.log("b")
+    console.log(b)
     res.status(200).send("Recebido")
 })
 app.listen(port,()=>{
