@@ -10,7 +10,7 @@ app.use(cors());
 
 app.get("/receber",(req,res)=>{
     var b = req.body;
-    var s = JSON.parse(B);
+    var s = JSON.parse(b);
     console.log("s")
     res.status(200).send("Recebido")
 })
