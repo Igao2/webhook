@@ -1,7 +1,6 @@
 const express = require("express");
-const cors = require('cors');
 const app = express();
-const bodyParser = require('body-parser');
+
 
 const port = process.env.PORT || 8000;
 app.use(express.static('www'));
