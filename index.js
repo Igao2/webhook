@@ -8,8 +8,8 @@ app.use(express.json())
 
 app.get("/receber",(req,res)=>{
     var b = req.body;
-    var s = JSON.parse(b);
-    console.log("s")
+    
+    console.log("b")
     res.status(200).send("Recebido")
 })
 app.listen(port,()=>{
