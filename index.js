@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.use(express.json()); // Middleware para ler JSON no corpo da requisição
-app.use(express.urlencoded({ extended: true })); // Middleware para ler dados de formulário (POST x-www-form-urlencoded)
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 // Rota para receber qualquer método (GET, POST, etc.)
 app.all('/receber', (req, res) => {
